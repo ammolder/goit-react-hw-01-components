@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import { Wrapper, Item, ElItem } from './ProfileSoc.styled';
+import { SocList, Item, ElItem } from './ProfileSoc.styled';
 
 export const ProfileSoc = ({ stats: { followers, views, likes } }) => {
   return (
-    <Wrapper className="stats">
+    <SocList className="stats">
       <Item>
         <ElItem className="label">Followers</ElItem>
         <ElItem className="quantity">{followers}</ElItem>
@@ -16,7 +16,7 @@ export const ProfileSoc = ({ stats: { followers, views, likes } }) => {
         <ElItem className="label">Likes</ElItem>
         <ElItem className="quantity">{likes}</ElItem>
       </Item>
-    </Wrapper>
+    </SocList>
   );
 };
 ProfileSoc.propTypes = {

@@ -1,3 +1,5 @@
+import { Title } from './TitlePage.style';
+
 export const TitlePage = ({ title }) => {
-  return title && <h2 className="title">{title}</h2>;
+  return title && <Title className="title">{title}</Title>;
 };

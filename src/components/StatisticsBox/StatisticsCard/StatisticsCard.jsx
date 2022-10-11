@@ -1,12 +1,14 @@
+import { CardList, Item, Data } from './StatisticsCard.style';
+
 export const StatisticsCard = ({ stats }) => {
   return (
-    <ul className="stat-list">
+    <CardList className="stat-list">
       {stats.map(stat => (
-        <li className="item" key={stat.id}>
-          <span className="label">{stat.label}</span>
-          <span className="percentage">{stat.percentage}</span>
-        </li>
+        <Item className="item" key={stat.id}>
+          <Data className="label">{stat.label}</Data>
+          <Data className="percentage">{stat.percentage}</Data>
+        </Item>
       ))}
-    </ul>
+    </CardList>
   );
 };

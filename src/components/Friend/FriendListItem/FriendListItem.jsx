@@ -1,19 +1,20 @@
 import PropTypes from 'prop-types';
+import { ListItem, Circle, Name } from './FriendListItem.styled';
 
 export const FriendListItem = ({ friends }) => {
   return (
     <>
       {friends.map(friend => (
-        <li className="item" key={friend.id}>
-          <span className="status">{friend.isOnline}</span>
+        <ListItem className="item" key={friend.id}>
+          <Circle className="status" isOnline={friend.isOnline}></Circle>
           <img
             className="avatar"
             src={friend.avatar}
             alt="User avatar"
             width="48"
           />
-          <p className="name">{friend.name}</p>
-        </li>
+          <Name className="name">{friend.name}</Name>
+        </ListItem>
       ))}
     </>
   );

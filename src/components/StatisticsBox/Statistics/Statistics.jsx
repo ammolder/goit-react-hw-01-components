@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import { TitlePage } from '../TitlePage/TitlePage';
 import { StatisticsCard } from '../StatisticsCard/StatisticsCard';
+import { Wrapper } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
+    <Wrapper className="statistics">
       <TitlePage title={title} />
       <StatisticsCard stats={stats} />
-    </section>
+    </Wrapper>
   );
 };
 
