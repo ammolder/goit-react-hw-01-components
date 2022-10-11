@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { TitlePage } from './TitlePage';
-import { StatisticsCard } from './StatisticsCard';
+import { TitlePage } from '../TitlePage/TitlePage';
+import { StatisticsCard } from '../StatisticsCard/StatisticsCard';
 
 export const Statistics = ({ title, stats }) => {
   return (

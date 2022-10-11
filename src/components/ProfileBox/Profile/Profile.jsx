@@ -1,11 +1,12 @@
-import { ProfileInfo } from './ProfileInfo';
-import { ProfileSoc } from './ProfileSoc';
+import { ProfileInfo } from '../ProfileInfo/ProfileInfo';
+import { ProfileSoc } from '../ProfileSoc/ProfileSoc';
+import { Wrapper } from './Profile.styled';
 
 export const Profile = ({
   user: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <div className="profile">
+    <Wrapper className="profile">
       <ProfileInfo
         username={username}
         tag={tag}
@@ -13,6 +14,6 @@ export const Profile = ({
         avatar={avatar}
       />
       <ProfileSoc stats={stats} />
-    </div>
+    </Wrapper>
   );
 };
