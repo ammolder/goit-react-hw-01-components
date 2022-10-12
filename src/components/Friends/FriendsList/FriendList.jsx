@@ -1,7 +1,7 @@
 import { FriendListItem } from '../FriendListItem/FriendListItem';
-import { Wrapper } from './FriendList.styled';
+import { Wrapper } from './FriendsList.styled';
 
-export const FriendList = ({ friends }) => {
+export const FriendsList = ({ friends }) => {
   return (
     <Wrapper className="friend-list">
       <FriendListItem friends={friends} />
