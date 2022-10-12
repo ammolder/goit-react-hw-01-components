@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { CardList, Item, Data } from './StatisticsCard.style';
 
 export const StatisticsCard = ({ stats }) => {
@@ -11,4 +12,13 @@ export const StatisticsCard = ({ stats }) => {
       ))}
     </CardList>
   );
+};
+StatisticsCard.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
